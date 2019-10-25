@@ -1,0 +1,461 @@
+/** BASE STYLES **/
+/** font-family: 'Montserrat', sans-serif; font-family: 'Nunito', sans-serif; **/
+
+*{
+  box-sizing: border-box;
+}
+
+.row::after {
+  content:"";
+  clear:both;
+  display:table;
+}
+
+[class*="col-"]{
+  float:left;
+  padding: 10px;
+}
+
+/** For mobile phones **/
+  [class*="col-"] {
+    width: 100%;
+  }
+
+@media only screen and (min-width: 600px) {
+/** For tablets: **/
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 850px) {
+/** For desktop: **/
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+/** BASE STYLES **/
+
+body{
+  color: #9b9b9b;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: left;
+}
+
+/** HEADER **/
+
+header {
+  background: url('../img/jubilee-hero.png') no-repeat #eeeeee;
+  background-size: 100% 100%;
+  height: auto;
+}
+
+h1 {
+  color: #bbc085;
+  font-family: 'Lora', serif;
+  font-size: 24px;
+  padding: 10px;
+}
+
+h2 {
+  color: #000000;
+  font-family: 'Lora', serif;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 10px;
+  width: auto;
+}
+
+.dark-grey {
+  color: #2b2b2b;
+}
+
+/** For Tablets **/
+
+@media only screen and (min-width: 600px){
+
+  h1 {
+    color: #bbc085;
+    font-size: 24px;
+    padding: 25px;
+    text-align: left;
+  }
+
+  h2 {
+    color: #9b9b9b;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 15px;
+    width: 100%;
+  }
+}
+
+/** For Desktops **/
+
+@media only screen and (min-width: 850px){
+
+  h1 {
+    color: #bbc085;
+    font-family: 'Lora', serif;
+    font-size: 50px;
+    padding: 65px 0 25px 25px;
+    text-align: left;
+  }
+
+  h2 {
+    color: #9b9b9b;
+    font-family: 'Lora', serif;
+    font-size: 72px;
+    line-height: 80px;
+    padding: 20px 0 20px 25px;
+    width: 1000px;
+  }
+}
+
+/** NAVIGATION **/
+
+nav{
+  color: #2b2b2b;
+  float: none;
+  text-align: left;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  padding: 0px;
+}
+
+nav ul{
+  padding: 10px;
+}
+
+nav ul li{
+  list-style-type: none;
+  display:grid;
+  padding: 0px;
+}
+
+nav ul li a {
+  color: #828282;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 18px;
+  padding: 0px;
+}
+
+/** NAVIGATION for tablets **/
+
+@media all and (min-width:600px){
+
+  nav{
+    font-size: 18px;
+    padding: 0px 0px 0px 20px;
+  }
+
+  nav ul{
+    margin-top: 0px;
+    padding: 0px 40px 0px 0px;
+  }
+
+  nav ul li{
+    display: grid;
+    line-height: 25px;
+  }
+}
+
+/** NAVIGATION for desktops **/
+
+@media all and (min-width: 850px){
+
+  nav{
+    float: right;
+    font-size: 24px;
+    padding: 55px 40px 40px 40px;
+    text-align:right;
+  }
+
+  nav ul{
+    padding-top: 25px;
+  }
+
+  nav ul li{
+    display: inline-block;
+  }
+
+  nav ul li a{
+    padding-left: 80px;
+    text-decoration: none;
+  }
+}
+
+/** ABOUT **/
+
+#jubilee-about {
+  background-color: white;
+  padding: 0px;
+}
+
+#jubilee-about h2 {
+  color: #000000;
+  font-family: 'Lora', serif;
+  font-size: 21px;
+  font-weight: bold;
+  padding: 0px 0px 0px 15px;
+}
+
+#jubilee-about p {
+  color: #7f7f7f;
+  font-size: 15px;
+  line-height: 30px;
+  padding-left: 0px;
+  padding-right: 10px;
+}
+
+/** ABOUT for tablets **/
+
+@media all and (min-width: 600px){
+
+  #jubilee-about p {
+    font-size: 18px;
+    line-height: 40px;
+  }
+}
+
+/** ABOUT for Desktops **/
+
+@media all and (min-width: 850px){
+
+  #jubilee-about {
+    padding: 20px;
+  }
+
+  #jubilee-about h2 {
+    font-size: 36px;
+    padding-left: 60px;
+  }
+
+  #jubilee-about p {
+    font-size: 21px;
+    line-height: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+/** WORK **/
+
+#jubilee-work {
+  background: #f9ceb7;
+  padding-top: 25px;
+  margin: 0;
+  text-align: center;
+}
+
+#jubilee-work img {
+  padding-bottom: 30px;
+}
+
+#jubilee-work h3 {
+  color: #000000;
+  font-size: 21px;
+  line-height: 32px;
+  margin: 0 auto;
+  width: 190px;
+}
+
+#jubilee-work p {
+  color: #000000;
+  font-family: 'Lora', serif;
+  font-size: 14px;
+  line-height: 30px;
+  padding: 10px;
+}
+
+/** WORK for tablets **/
+
+@media only screen and (min-width: 600px){
+
+  #jubilee-work h3 {
+    font-size: 20px;
+  }
+
+  #jubilee-work p {
+    padding: 0px;
+  }
+}
+
+/** CONTACT **/
+
+#jubilee-contact{
+  background: #ebebeb;
+  padding-top: 15px;
+  margin: 0px;
+}
+
+#jubilee-contact h2{
+  color: black;
+  margin-top: 0px;
+  font-family: 'Lora', serif;
+  font-size: 21px;
+  line-height: 44px;
+  margin-top: 0
+  padding: 15px;
+}
+
+#jubilee-contact img#contact-img {
+  border: 12px solid #ffffff;
+  margin-left: 10px;
+  width: 90%;
+}
+
+#email-header{
+  color: black;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 44px;
+  margin: 10px;
+}
+
+#jubilee-contact a {
+  color: #c49075;
+  font-size: 21px;
+  font-weight: bold;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.dummy-notice {
+  display: none;
+  border:1px solid #000;
+  height:auto;
+  width:auto;
+  margin-left:10px;
+}
+
+a:hover + .dummy-notice {
+  display: block;
+}
+
+#socialmedia-header {
+  color: black;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 44px;
+  margin: 10px;
+}
+
+#socialmedia-header a {
+  color: #c49075;
+  font-size: 21px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#socialmedia-header ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+#socialmedia-header ul li {
+  display: inline-block;
+}
+
+#socialmedia-header ul li img {
+  font-size: 25px;
+  padding-right: 15px;
+}
+
+/** CONTACT for tablets **/
+
+@media only screen and (min-width: 600px){
+
+  #jubilee-contact h2{
+    font-size: 32px;
+    padding: 0px;
+  }
+
+  img#contact-img {
+    margin-left: 25px;
+    width: 80%;
+  }
+
+  #email-header{
+    font-size: 25px;
+    margin: 0px;
+  }
+
+  #socialmedia-header {
+    margin: 0px;
+  }
+
+  #socialmedia-header a {
+    font-size: 28px;
+  }
+
+  #socialmedia-header ul li img {
+    font-size: 55px;
+    padding-right: 15px;
+  }
+}
+
+/** CONTACT for Desktops **/
+
+@media only screen and (min-width:850px){
+
+  #jubilee-contact img#contact-img {
+    margin-left: 25px;
+  }
+
+  #jubilee-contact h2 {
+    font-size: 36px;
+    line-height: 44px;
+    padding: 0px;
+  }
+
+  #jubilee-contact a {
+    font-size: 28px;
+  }
+
+  #email-header{
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 44px;
+    margin: -30px 0 5px 0;
+  }
+
+  #socialmedia-header {
+    font-size: 29px;
+    line-height: 44px;
+    margin: 40px 0 0 0;
+  }
+
+  #socialmedia-header a {
+    font-size: 28px;
+  }
+
+  #socialmedia-header ul {
+    padding-left: 0px;
+  }
+
+  #socialmedia-header ul li img {
+    font-size: 55px;
+    padding-right: 25px;
+  }
+}
